@@ -34,6 +34,10 @@ public class Main {
 		list.add(a10);
 		
 		// apply your code here...
+		for(Artist x:list)
+		{
+			System.out.println(x);
+		}
 	}
 
 }
