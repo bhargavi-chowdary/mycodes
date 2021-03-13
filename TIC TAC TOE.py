@@ -1,7 +1,3 @@
-
-
-
-
 current_player="A"
 gameisgoing=True
 winner=None
@@ -20,9 +16,9 @@ def handle_turn():
         board[p] = current_player
     except ValueError:
         print(int(input("Choose the random position from 0 to 8:")))
-    #if values[p-1] != current_player:
+       #if values[p-1] != current_player:
        # print("Place already filled")
-      #  print(int(input("Choose the random position from 0 to 8:")))
+       #  print(int(input("Choose the random position from 0 to 8:")))
 def swap_players():
     global current_player
     if current_player=="A":
