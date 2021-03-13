@@ -10,15 +10,16 @@ def display_board():
     print(board[3] + " | " + board[4] + " | " + board[5])
     print(board[6] + " | " + board[7] + " | " + board[8])
 def handle_turn():
-    global values
-    try:
-        p=int(input("Choose the random position from 0 to 8:"))
-        board[p] = current_player
-    except ValueError:
-        print(int(input("Choose the random position from 0 to 8:")))
-       #if values[p-1] != current_player:
-       # print("Place already filled")
-       #  print(int(input("Choose the random position from 0 to 8:")))
+     global  gameisgoing
+          p = int(input("Choose the random value from 0 t0 8:"))
+          if p<8:
+              board[p] = current_player
+          elif p>8:
+              p = int(input("Choose the random value from 0 t0 8:"))
+              gameisgoing=True
+          #if p==board[p]:
+          # print("Place already filled")
+          # p = int(input("Choose the random value from 0 t0 8:"))
 def swap_players():
     global current_player
     if current_player=="A":
